@@ -2,6 +2,12 @@
 /dist
 /node_modules
 
+# configs
+config/default.yml
+config/development.yml
+config/production.yml
+config/test.yml
+
 # Logs
 logs
 *.log
