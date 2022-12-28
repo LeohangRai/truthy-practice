@@ -64,4 +64,3 @@ winston:
   awsAccessKeyId: ''
   awsSecretAccessKey: ''
   awsRegion: ''
-  
