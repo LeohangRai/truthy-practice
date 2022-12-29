@@ -1,4 +1,4 @@
-import { IsIn, IsNumber } from 'class-validator';
+import { IsIn, IsNumber, Min, Max } from 'class-validator';
 import { OmitType } from '@nestjs/swagger';
 
 import { UserStatusEnum } from 'src/auth/user-status.enum';
@@ -22,5 +22,6 @@ export class CreateUserDto extends OmitType(RegisterUserDto, [
   status: UserStatusEnum;
 
   @IsNumber()
+  @Min(1)
   roleId: number;
 }
